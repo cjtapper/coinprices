@@ -2,6 +2,9 @@
 Requests crypto prices from coinmarketcap.com and prints them to `stdout` in the
 format required for a `ledger` price history database.
 
+Perhaps somewhat confusingly, I'm refering to the ledger accounting software
+(https://www.ledger-cli.org/), not the Ledger hardware wallet (https://www.ledger.com/), although I do use and recommend both!
+
 At the moment, it's hardcoded to request quotes for ADA, BTC, LTC, XRP, and ETH
 in AUD, because that's all that's relevant to me. Maybe I'll update it later on
 to make it more flexible.
@@ -24,7 +27,7 @@ pip install -r requirements.txt
 python coinprices.py
 ```
 
-I like to append this to my price history. For example:
+I like to append the output to my price history. For example:
 ```sh
 python coinprices.py >> ~/.pricedb
 ```
