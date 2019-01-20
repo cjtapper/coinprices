@@ -7,25 +7,25 @@ in AUD, because that's all that's relevant to me. Maybe I'll update it later on
 to make it more flexible.
 
 ## Requirements
-Python 3.6+ (uses `f` strings, hence 3.6)
-pip
-CoinMarketCap API key in environment variable `COIN_MARKET_CAP_API_KEY`
+* Python 3.6+ (uses `f` strings, hence 3.6)
+* pip
+* CoinMarketCap API key in environment variable `COIN_MARKET_CAP_API_KEY`
 
 ## Installation
 Clone the repo.
 
 Install requirements:
-```bash
+```sh
 pip install -r requirements.txt
 ```
 
 ## Usage:
-```bash
+```sh
 python coinprices.py
 ```
 
 I like to append this to my price history. For example:
-```bash
+```sh
 python coinprices.py >> ~/.pricedb
 ```
 
